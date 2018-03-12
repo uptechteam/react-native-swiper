@@ -620,7 +620,7 @@ export default class extends Component {
   }
 
   renderScrollView = pages => {
-    if (Platform.OS === 'ios') {
+//     if (Platform.OS === 'ios') {
       return (
         <ScrollView ref={this.refScrollView}
           {...this.props}
@@ -634,7 +634,7 @@ export default class extends Component {
           {pages}
         </ScrollView>
        )
-    }
+//     }
     return (
       <ViewPagerAndroid ref={this.refScrollView}
         {...this.props}
